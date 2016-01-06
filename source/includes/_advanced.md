@@ -164,7 +164,7 @@ Buildroot is a lean operating system, and does not have a package manager to ins
 
 ```shell
   cd ~/CHIP-tools
-  ./chip-update-firmware.sh
+  sudo ./chip-update-firmware.sh
 ```
 To speed up flashing, you can run `./chip-update-firmware.sh -f` to enable fastboot flashing. 
 During flashing, the terminal will fill with messages.  If successful, you'll see C.H.I.P. run through a hardware test, with the answers being 'OK'.  If C.H.I.P. is 'OK', you can remove the jumper wire. Here is a [sample successful output](#buildroot-output).
@@ -174,7 +174,7 @@ If you want to flash CHIP with the debian OS with no window manager or GUI
 
 ```shell
   cd ~/CHIP-tools
-  ./chip-update-firmware.sh -d
+  sudo ./chip-update-firmware.sh -d
 ```  
 To speed up flashing, you can run `./chip-update-firmware.sh -d -f` to enable fastboot flashing. 
 
@@ -183,7 +183,7 @@ If you want to flash CHIP with the complete CHIP Operating System
 
 ```shell
   cd ~/CHIP-tools
-  ./chip-update-firmware.sh -d -b next-gui
+  sudo ./chip-update-firmware.sh -d -b next-gui
 ```  
 
 To speed up flashing, you can run `./chip-update-firmware.sh -d -b next-gui` to enable fastboot flashing. 
@@ -223,7 +223,7 @@ This will take a while, maybe an hour. When finished, flash CHIP with the script
 
 ```shell
   cd ~/CHIP-tools
-  ./chip-update-firmware.sh
+  sudo ./chip-update-firmware.sh
 ```
 
 ### Appendix
